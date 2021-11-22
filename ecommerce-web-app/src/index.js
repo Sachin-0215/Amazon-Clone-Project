@@ -3,12 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./StateProvider";
+import reducer, { initialState } from "./reducer";
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>
+      <ReactNotification />
       <App />
     </StateProvider>
   </React.StrictMode>,

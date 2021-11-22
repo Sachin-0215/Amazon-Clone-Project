@@ -12,7 +12,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__ad"
-          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonPay/LPAOffers/April/Prime/Store/V2/LPA501_1500x250.jpg"
           alt=""
         />
 
@@ -20,7 +20,7 @@ function Checkout() {
           <h3>Hello, {user?.email}</h3>
           <h2 className="checkout__title">Your shopping Basket</h2>
 
-          {basket.map(item => (
+          {basket.map((item) => (
             <CheckoutProduct
               id={item.id}
               title={item.title}
@@ -29,7 +29,6 @@ function Checkout() {
               rating={item.rating}
             />
           ))}
-
         </div>
       </div>
 

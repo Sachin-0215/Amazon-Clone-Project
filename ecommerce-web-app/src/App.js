@@ -7,12 +7,13 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
+import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
 const promise = loadStripe(
-  "pk_test_51HPvU9DFg5koCdLGJJbNo60QAU99BejacsvnKvT8xnCu1wFLCuQP3WBArscK3RvSQmSIB3N0Pbsc7TtbQiJ1vaOi00X9sIbazL"
+  "pk_test_51Jp3xZSGbgvvn28bLCtJxbvbUtny1aMKCbRFoSlWFEGjt9e9qmjhFdoz9aZznDBIpSnrF7QcUsoTed4JGsPF1Qlo00kN5tqJwL"
 );
 
 function App() {
